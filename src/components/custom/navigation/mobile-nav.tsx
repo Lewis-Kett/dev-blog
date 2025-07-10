@@ -15,7 +15,7 @@ const MobileNav = ({ children }: MobileNavProps) => {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden z-10">
       <Button
         variant="ghost"
         aria-expanded={isOpen}
