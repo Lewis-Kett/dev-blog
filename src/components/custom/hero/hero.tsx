@@ -1,5 +1,5 @@
-import { Github, Twitter, Linkedin } from 'lucide-react'
-import { HeroImage, SocialIcon } from './index'
+import { Github, Linkedin } from 'lucide-react'
+import { HeroImage, SocialIcon, XIcon } from '@/components/custom/hero'
 
 export const Hero = () => {
   return (
@@ -12,11 +12,11 @@ export const Hero = () => {
             UK.
           </h1>
           <p className="text-xl text-muted-foreground">
-            I work with businesses to deliver their product vision, work directly with customers and mentor coach.
+            Using my experience with XP, TDD & Agile methodologies I create performant, maintainable & scalable software.
           </p>
-          <div className="flex items-center gap-4 pt-4">
+          <div className="flex items-center gap-4 pt-4 justify-between md:justify-start">
             <SocialIcon href="https://github.com/yourusername" Icon={Github} label="GitHub Profile" />
-            <SocialIcon href="https://twitter.com/yourusername" Icon={Twitter} label="Twitter Profile" />
+            <SocialIcon href="https://twitter.com/yourusername" Icon={XIcon} label="Twitter Profile" />
             <SocialIcon href="https://linkedin.com/in/yourusername" Icon={Linkedin} label="LinkedIn Profile" />
           </div>
         </div>
