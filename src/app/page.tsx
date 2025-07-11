@@ -3,7 +3,7 @@ import { HomeCarousel } from '@/components/custom/carousel'
 
 export default function Home() {
   return (
-    <main className="container mx-auto mt-10">
+    <main>
       <Hero />
       <HomeCarousel />
     </main>
