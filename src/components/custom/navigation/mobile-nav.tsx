@@ -38,7 +38,7 @@ const MobileNav = ({ children }: MobileNavProps) => {
 
       <div
         id="mobile-nav"
-        className={`fixed inset-x-0 top-0 bg-background px-6 pb-6 pt-16 border-b border-gray-100 transition-all duration-200 ease-in ${
+        className={`fixed inset-x-0 top-0 bg-white px-6 pb-6 pt-16 border-b border-gray-100 transition-all duration-200 ease-in ${
           isOpen ? 'visible opacity-100 translate-y-[100px]' : 'invisible opacity-0 -translate-y-4'
         }`}
       >

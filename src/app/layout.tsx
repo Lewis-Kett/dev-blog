@@ -9,8 +9,8 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'Kett.dev',
-  description: "Lewis Kett's personal branding website & software development blog",
+  title: 'LKett.dev',
+  description: "Lewis Kett's personal website & software development blog",
 }
 
 export default function RootLayout({

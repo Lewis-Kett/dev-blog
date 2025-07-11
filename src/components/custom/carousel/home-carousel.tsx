@@ -13,21 +13,23 @@ const images = [
 
 export const HomeCarousel = () => {
   return (
-    <section className="w-full">
-      <div className="py-24">
+    <section className="md:rounded-b-[60px] rounded-b-2xl bg-white">
+      <div className="mx-auto px-0 md:px-5 lg:max-w-4/5 pb-24 md:pb-20 lg:pb-40">
         <Carousel
           opts={{
             align: 'start',
             loop: true,
           }}
-          plugins={[Autoscroll({
-            speed: 1
-          })]}
+          plugins={[
+            Autoscroll({
+              speed: 1,
+            }),
+          ]}
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="lg:basis-1/3 md:basis-1/2">
-                <div className="h-[240px] relative rounded-2xl overflow-hidden">
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="relative h-[240px] overflow-hidden rounded-2xl">
                   <Image
                     src={image}
                     alt={`Image ${index + 1}`}
