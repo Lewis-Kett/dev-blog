@@ -13,8 +13,8 @@ const images = [
 
 export const HomeCarousel = () => {
   return (
-    <section className="md:rounded-b-[60px] rounded-b-2xl bg-white">
-      <div className="mx-auto px-0 md:px-5 lg:max-w-4/5 pb-24 md:pb-20 lg:pb-40">
+    <section className="rounded-b-2xl bg-white md:rounded-b-[60px]">
+      <div className="mx-auto px-0 pb-24 md:px-5 md:pb-20 lg:max-w-4/5 lg:pb-40 xl:max-w-2/3">
         <Carousel
           opts={{
             align: 'start',

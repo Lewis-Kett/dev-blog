@@ -4,7 +4,7 @@ import { HeroImage, SocialIcon, XIcon } from '@/components/custom/hero'
 export const Hero = () => {
   return (
     <section className="bg-white">
-      <div className="mx-auto flex flex-col space-y-6 px-5 py-16 lg:max-w-4/5">
+      <div className="mx-auto flex flex-col space-y-6 px-5 py-16 lg:max-w-4/5 xl:max-w-2/3">
         <HeroImage />
         <div className="space-y-10">
           <h1 className="text-3xl leading-tight font-normal text-gray-900 md:text-5xl lg:text-6xl">
