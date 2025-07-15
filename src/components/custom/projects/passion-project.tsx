@@ -13,7 +13,7 @@ export const PassionProject = () => {
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        <div className="px-8 py-12 text-white md:flex md:basis-1/2 md:justify-end md:px-10 lg:px-28">
+        <div className="px-8 py-12 text-white md:flex md:basis-1/2 md:justify-end md:px-10 lg:px-28 xl:px-48">
           <div className="flex flex-col gap-6">
             <h1 className="text-3xl font-medium md:text-5xl">My Passion Project</h1>
             <p className="text-lg">Modernizing the operations, management and CRM for sailing clubs across the UK.</p>

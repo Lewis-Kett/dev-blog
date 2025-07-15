@@ -43,7 +43,7 @@ const NavLinks = ({ className }: { className?: string }) => {
 
 export const Navigation = () => {
   return (
-    <header className="w-full px-6 py-8 border-b border-gray-100 bg-white">
+    <header className="w-full px-6 py-8 border-b border-gray-200 bg-white">
       <div className="flex items-center justify-between">
         <Link href="/" className="text-xl font-medium text-gray-900 font-sans z-10">
           Lewis Kett
