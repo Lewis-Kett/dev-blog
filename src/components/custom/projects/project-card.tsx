@@ -13,7 +13,7 @@ export const ProjectCard = ({ title, description, image, link }: ProjectCardProp
   return (
     <Link href={link} className="group block w-full">
       <Card className="bg-background overflow-hidden border-0 shadow-none transition-all duration-300">
-        <div className="max-h-[400px] relative aspect-16/9 overflow-hidden lg:aspect-square">
+        <div className="relative aspect-16/9 max-h-[400px] overflow-hidden lg:aspect-square">
           <Image
             src={image}
             alt={`${title} project thumbnail`}
@@ -21,11 +21,11 @@ export const ProjectCard = ({ title, description, image, link }: ProjectCardProp
             className="rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        <CardHeader>
-          <CardTitle className="text-3xl">{title}</CardTitle>
-          <CardDescription className="text-lg text-black lg:text-xl">{description}</CardDescription>
+        <CardHeader className="gap-4 px-0">
+          <CardTitle className="text-2xl xl:text-3xl font-medium">{title}</CardTitle>
+          <CardDescription className="text-black text-lg">{description}</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-0">
           <div className="text-muted-foreground flex items-center text-sm">
             <span className="font-medium text-black">See the project</span>
             <svg
