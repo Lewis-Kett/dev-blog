@@ -1,5 +1,4 @@
-import { Github, Linkedin } from 'lucide-react'
-import { HeroImage, SocialIcon, XIcon } from '@/components/custom/hero'
+import { HeroImage, SocialIconSet } from '@/components/custom/hero'
 
 export const Hero = () => {
   return (
@@ -9,7 +8,7 @@ export const Hero = () => {
           src="/lewis.webp"
           alt="Lewis Kett profile picture"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          size='medium'
+          size="medium"
         />
         <div className="space-y-10">
           <h1 className="text-3xl leading-tight font-normal text-gray-900 md:text-5xl lg:text-6xl xl:max-w-3/4">
@@ -21,9 +20,7 @@ export const Hero = () => {
             software.
           </p>
           <div className="flex items-center justify-between gap-4 pt-4 md:justify-start">
-            <SocialIcon href="https://github.com/yourusername" Icon={Github} label="GitHub Profile" />
-            <SocialIcon href="https://twitter.com/yourusername" Icon={XIcon} label="Twitter Profile" />
-            <SocialIcon href="https://linkedin.com/in/yourusername" Icon={Linkedin} label="LinkedIn Profile" />
+            <SocialIconSet variant='light'/>
           </div>
         </div>
       </div>

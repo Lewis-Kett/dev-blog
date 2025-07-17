@@ -1,6 +1,6 @@
 import { Hero } from './hero'
 import { HeroImage } from './hero-image'
-import { SocialIcon } from './social-icon'
+import { SocialIcon, SocialIconSet } from './social-icon'
 import { XIcon } from './xIcon'
 
-export { Hero, HeroImage, SocialIcon, XIcon }
+export { Hero, HeroImage, SocialIcon, SocialIconSet, XIcon }

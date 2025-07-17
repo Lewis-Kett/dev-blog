@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { ContextAwareNavLink, MobileNav } from '@/components/custom/navigation'
 import { navigationContent } from '@/content'
 
-const NavLinks = ({ className }: { className?: string }) => {
+export const NavLinks = ({ className }: { className?: string }) => {
   return (
     <>
       {navigationContent.map((item) => (
