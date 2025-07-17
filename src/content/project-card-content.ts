@@ -1,4 +1,4 @@
-export const cardContent = [
+export const projectCardContent = [
   {
     title: 'Diageo',
     description: 'Transforming the way diageo works with their customers',

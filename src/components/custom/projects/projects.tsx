@@ -1,5 +1,5 @@
-import { ProjectCard } from '@/components/custom/projects'
-import { cardContent } from './card-content'
+import { ProjectCard } from '@/components/custom/card'
+import { projectCardContent } from '@/content'
 
 export const Projects = () => {
   return (
@@ -9,7 +9,7 @@ export const Projects = () => {
         Explore my previous projects and see how I&apos;ve helped businesses and individuals achieve their goals.
       </p>
       <div className="flex flex-col md:flex-row md:gap-8">
-        {cardContent.map((project) => (
+        {projectCardContent.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
       </div>

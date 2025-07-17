@@ -1,5 +1,5 @@
 import { Hero } from '@/components/custom/hero'
-import { HomeCarousel } from '@/components/custom/carousel'
+import { FeedbackCarousel, HomeCarousel } from '@/components/custom/carousel'
 import { Projects, PassionProject } from '@/components/custom/projects'
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <HomeCarousel />
       <Projects />
       <PassionProject />
+      <FeedbackCarousel />
     </main>
   )
 }

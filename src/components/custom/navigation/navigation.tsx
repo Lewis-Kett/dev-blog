@@ -1,38 +1,12 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ContextAwareNavLink, MobileNav } from '@/components/custom/navigation'
-
-const navItems = [
-  {
-    id: 1,
-    label: 'Blog',
-    href: '/blog',
-    isExternal: false,
-  },
-  {
-    id: 2,
-    label: 'Projects',
-    href: '/projects',
-    isExternal: false,
-  },
-  {
-    id: 3,
-    label: 'Resume',
-    href: '/resume',
-    isExternal: false,
-  },
-  {
-    id: 4,
-    label: 'About me',
-    href: '/about',
-    isExternal: false,
-  },
-]
+import { navigationContent } from '@/content'
 
 const NavLinks = ({ className }: { className?: string }) => {
   return (
     <>
-      {navItems.map((item) => (
+      {navigationContent.map((item) => (
         <ContextAwareNavLink key={item.id} className={className} href={item.href} isExternal={item.isExternal}>
           {item.label}
         </ContextAwareNavLink>

@@ -1,4 +1,4 @@
-export const images = [
+export const carouselContent = [
     '/placeholder-1.jpg',
     '/placeholder-2.jpg',
     '/placeholder-3.jpg',
