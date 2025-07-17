@@ -1,16 +1,31 @@
 import Image from 'next/image'
+import { cva, type VariantProps } from 'class-variance-authority'
+import { cn } from '@/lib/utils'
 
-export const HeroImage = () => {
+const heroImageVariants = cva('relative overflow-hidden rounded-full', {
+  variants: {
+    size: {
+      small: 'h-[84px] w-[84px]',
+      medium: 'h-[100px] w-[100px]',
+      large: 'h-[148px] w-[148px]',
+    },
+  },
+  defaultVariants: {
+    size: 'small',
+  },
+})
+
+interface HeroImageProps extends VariantProps<typeof heroImageVariants> {
+  src: string
+  alt: string
+  className?: string
+  sizes: string
+}
+
+export const HeroImage = ({ src, alt, className, sizes, size }: HeroImageProps) => {
   return (
-    <div className="relative h-[150px] w-[150px] overflow-hidden rounded-full">
-      <Image
-        src="/lewis.webp"
-        alt="Lewis Kett profile picture"
-        fill
-        priority
-        className="object-cover"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
+    <div className={cn(heroImageVariants({ size }), className)}>
+      <Image src={src} alt={alt} fill priority className="object-cover" sizes={sizes} />
     </div>
   )
 }

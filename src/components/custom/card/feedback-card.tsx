@@ -10,13 +10,19 @@ interface FeedbackCardProps {
 
 const FeedbackCard = ({ name, title, company, comments }: FeedbackCardProps) => {
   return (
-    <Card key={name}>
-      <CardHeader>
-        <HeroImage />
+    <Card key={name} className="p-10 pb-16">
+      <CardHeader className="p-0">
+        <HeroImage
+          src="/lewis.webp"
+          alt="Lewis Kett profile picture"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          size='small'
+          className="grayscale filter"
+        />
         <CardTitle className="text-2xl">{name}</CardTitle>
-        <CardDescription className="text-black">{`${title} at ${company}`}</CardDescription>
+        <CardDescription className="text-md text-black">{`${title} at ${company}`}</CardDescription>
       </CardHeader>
-      <CardContent className="pb-16">
+      <CardContent className="p-0">
         <p className="text-muted-foreground text-lg">&quot;{comments}&quot;</p>
       </CardContent>
     </Card>
