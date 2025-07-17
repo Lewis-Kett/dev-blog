@@ -7,7 +7,7 @@ import AutoPlay from 'embla-carousel-autoplay'
 
 const FeedbackCarousel = () => {
   return (
-    <section className="mx-auto md:max-w-4/5 xl:max-w-2/3 mb-36">
+    <section className="mx-auto mb-36 lg:max-w-4/5 xl:max-w-2/3">
       <div className="px-5 pt-24 pb-12">
         <h1 className="pb-5 text-3xl md:text-5xl">Expert Feedback</h1>
         <p className="text-lg">
