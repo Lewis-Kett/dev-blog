@@ -12,26 +12,22 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, image, link, variant = 'default' }: ProjectCardProps) => {
   const isCompact = variant === 'compact'
-  
+
   return (
     <Link href={link} className="group block w-full">
       <Card className="bg-background overflow-hidden border-0 shadow-none transition-all duration-300">
-        <div className={`relative overflow-hidden aspect-video ${isCompact ? 'rounded-2xl bg-muted' : ''}`}>
+        <div className={`relative aspect-video overflow-hidden`}>
           <Image
             src={image}
             alt={`${title} project thumbnail`}
             fill
-            className={`object-cover transition-transform duration-300 group-hover:scale-105 ${!isCompact ? 'rounded-2xl' : ''}`}
+            className={`rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105`}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>
-        <CardHeader className={`px-0 ${isCompact ? 'pt-4 pb-0' : 'gap-4'}`}>
-          <CardTitle className={`font-medium ${isCompact ? 'text-xl mb-2' : 'text-2xl xl:text-3xl'}`}>
-            {title}
-          </CardTitle>
-          <CardDescription className={isCompact ? 'text-muted-foreground text-sm leading-relaxed' : 'text-black text-lg'}>
-            {description}
-          </CardDescription>
+        <CardHeader className={`gap-4'} px-0`}>
+          <CardTitle className={`text-2xl font-medium xl:text-3xl`}>{title}</CardTitle>
+          <CardDescription className={'text-lg text-black'}>{description}</CardDescription>
         </CardHeader>
         {!isCompact && (
           <CardContent className="px-0">
