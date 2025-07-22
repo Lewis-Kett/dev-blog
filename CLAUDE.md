@@ -52,3 +52,15 @@ Components follow a modular pattern with barrel exports:
 - Use `const` declarations over `function` declarations
 - Define TypeScript types where possible
 - Focus on readable code over performance optimization
+
+## MCP Server Integration
+
+This project is configured with the Context7 MCP server for retrieving up-to-date documentation. When performing tasks that require current documentation, use the available MCP tools to fetch the latest information from official sources.
+
+**Key use cases:**
+- Retrieving ShadCN component documentation and examples
+- Getting the latest Next.js features and API documentation
+- Accessing current Tailwind CSS utility classes and configuration options
+- Fetching up-to-date React patterns and best practices
+
+Always prioritize using MCP-sourced documentation over potentially outdated knowledge when implementing features or troubleshooting issues.
