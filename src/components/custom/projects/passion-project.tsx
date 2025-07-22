@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const PassionProject = () => {
   return (
     <Link href="./projects/saily" className="group">
-      <section className="flex flex-col bg-[#292927] md:flex-row md:items-center">
+      <section className="flex flex-col bg-passion-project-bg md:flex-row md:items-center">
         <div className="relative h-[500px] w-full overflow-hidden md:order-1 md:basis-1/2">
           <Image
             src="/placeholder-5.jpg"
