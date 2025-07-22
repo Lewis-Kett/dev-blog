@@ -11,6 +11,7 @@ export const PassionProject = () => {
             alt="Passion project thumbnail"
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div className="px-8 py-12 text-white md:flex md:basis-1/2 md:justify-end md:px-10 lg:px-28 xl:px-48">

@@ -19,6 +19,7 @@ export const ProjectCard = ({ title, description, image, link }: ProjectCardProp
             alt={`${title} project thumbnail`}
             fill
             className="rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>
         <CardHeader className="gap-4 px-0">
