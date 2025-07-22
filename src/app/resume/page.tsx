@@ -46,6 +46,7 @@ export default function ResumePage() {
                 title={experience.title}
                 dateRange={experience.dateRange}
                 company={experience.company}
+                imagePath={experience.imagePath}
                 descriptions={experience.descriptions}
                 subRole={experience.subRole}
               />
