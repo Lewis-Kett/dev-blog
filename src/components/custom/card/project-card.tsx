@@ -7,45 +7,54 @@ interface ProjectCardProps {
   description: string
   image: string
   link: string
+  variant?: 'default' | 'compact'
 }
 
-export const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
+export const ProjectCard = ({ title, description, image, link, variant = 'default' }: ProjectCardProps) => {
+  const isCompact = variant === 'compact'
+  
   return (
     <Link href={link} className="group block w-full">
       <Card className="bg-background overflow-hidden border-0 shadow-none transition-all duration-300">
-        <div className="relative aspect-16/9 max-h-[400px] overflow-hidden lg:aspect-square">
+        <div className={`relative overflow-hidden aspect-video ${isCompact ? 'rounded-2xl bg-muted' : ''}`}>
           <Image
             src={image}
             alt={`${title} project thumbnail`}
             fill
-            className="rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
+            className={`object-cover transition-transform duration-300 group-hover:scale-105 ${!isCompact ? 'rounded-2xl' : ''}`}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>
-        <CardHeader className="gap-4 px-0">
-          <CardTitle className="text-2xl xl:text-3xl font-medium">{title}</CardTitle>
-          <CardDescription className="text-black text-lg">{description}</CardDescription>
+        <CardHeader className={`px-0 ${isCompact ? 'pt-4 pb-0' : 'gap-4'}`}>
+          <CardTitle className={`font-medium ${isCompact ? 'text-xl mb-2' : 'text-2xl xl:text-3xl'}`}>
+            {title}
+          </CardTitle>
+          <CardDescription className={isCompact ? 'text-muted-foreground text-sm leading-relaxed' : 'text-black text-lg'}>
+            {description}
+          </CardDescription>
         </CardHeader>
-        <CardContent className="px-0">
-          <div className="text-muted-foreground flex items-center text-sm">
-            <span className="font-medium text-black">See the project</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </div>
-        </CardContent>
+        {!isCompact && (
+          <CardContent className="px-0">
+            <div className="text-muted-foreground flex items-center text-sm">
+              <span className="font-medium text-black">See the project</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+          </CardContent>
+        )}
       </Card>
     </Link>
   )
