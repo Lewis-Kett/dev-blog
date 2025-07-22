@@ -25,7 +25,7 @@ export const Navigation = () => {
         <div className="hidden md:block">
           <nav className="flex items-center gap-8">
             <NavLinks />
-            <Button className='cursor-pointer'>Contact me</Button>
+            <Button>Contact me</Button>
           </nav>
         </div>
         <MobileNav>

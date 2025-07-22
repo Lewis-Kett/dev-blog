@@ -17,7 +17,7 @@ export default function Home() {
             <h1 className="pb-5 text-3xl md:text-5xl">Interested in connecting?</h1>
             <p className="text-lg">Let’s talk projects, collaborations, or anything design!</p>
           </div>
-          <Button size="lg" className="cursor-pointer md:w-60">
+          <Button size="lg" className="md:w-60">
             Book a call
           </Button>
         </div>
