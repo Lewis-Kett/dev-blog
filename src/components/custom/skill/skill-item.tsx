@@ -12,8 +12,8 @@ export function SkillItem({ imagePath, name, years }: Skill) {
         className="h-8 w-8 object-contain"
       />
       <div>
-        <span className="font-medium">{name}</span>
-        <span className="text-muted-foreground" aria-label="years of experience"> - {years}</span>
+        <span className="text-xl">{name}</span>
+        <span className="text-bold text-xl" aria-label="years of experience"> - {years}</span>
       </div>
     </article>
   )

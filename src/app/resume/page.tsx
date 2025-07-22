@@ -48,7 +48,6 @@ export default function ResumePage() {
                 company={experience.company}
                 imagePath={experience.imagePath}
                 descriptions={experience.descriptions}
-                subRole={experience.subRole}
               />
             ))}
           </div>
