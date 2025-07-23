@@ -10,7 +10,7 @@ interface FeedbackCardProps {
 
 const FeedbackCard = ({ name, title, company, comments }: FeedbackCardProps) => {
   return (
-    <Card key={name} className="p-10 pb-16">
+    <Card key={name} className="p-10 pb-16 min-h-full">
       <CardHeader className="p-0">
         <HeroImage
           src="/lewis.webp"

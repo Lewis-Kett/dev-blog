@@ -19,24 +19,17 @@ export default function ResumePage() {
           <Button variant="outline">Download Resume as PDF</Button>
         </div>
 
-        {/* Skills Section */}
         <section className="mb-16">
           <h2 className="mb-6 text-4xl font-medium">Skills</h2>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
               {skillsContent.map((skill, index) => (
-                <SkillItem
-                  key={index}
-                  imagePath={skill.imagePath}
-                  name={skill.name}
-                  years={skill.years}
-                />
+                <SkillItem key={index} imagePath={skill.imagePath} name={skill.name} years={skill.years} />
               ))}
             </div>
           </div>
         </section>
 
-        {/* Experience Section */}
         <section className="mb-16">
           <h2 className="mb-6 text-4xl font-medium">Experience</h2>
           <div className="space-y-8">

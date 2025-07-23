@@ -21,7 +21,7 @@ export const skillsContent: Skill[] = [
     years: "10+yrs"
   },
   {
-    imagePath: "/skills/react.png",
+    imagePath: "/skills/react.svg",
     name: "React",
     years: "10+yrs"
   },
