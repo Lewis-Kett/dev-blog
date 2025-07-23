@@ -10,8 +10,8 @@ export default function ResumePage() {
     <main>
       <div className="mx-auto px-5 py-12 lg:max-w-4/5 xl:max-w-2/3">
         <div className="mb-12 max-w-4xl lg:mb-16 lg:pt-14">
-          <h1 className="mb-8 text-4xl leading-tight font-medium md:text-6xl">Graduation Behind. Dedication Ahead.</h1>
-          <p className="mb-8 text-2xl leading-relaxed">
+          <h1 className="mb-8 text-4xl leading-tight font-medium md:text-6xl">Lewis Kett - Senior Software Engineer</h1>
+          <p className="mb-8 text-lg leading-relaxed md:text-2xl">
             Senior Software Engineer with 10+ years of commercial experience in web development. Specializing in React,
             TypeScript, and Node.js with a proven track record of delivering high-performance web applications and
             design systems for major brands.
@@ -19,10 +19,10 @@ export default function ResumePage() {
           <Button variant="outline">Download Resume as PDF</Button>
         </div>
 
-        <section className="mb-16">
-          <h2 className="mb-6 text-4xl font-medium">Skills</h2>
+        <section className="mb-16 md:mb-24">
+          <h2 className="mb-6 md:mb-10 text-3xl font-medium md:text-4xl">Skills</h2>
           <div className="mb-4">
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="grid gap-12 justify-center md:grid-cols-2 lg:grid-cols-4">
               {skillsContent.map((skill, index) => (
                 <SkillItem key={index} imagePath={skill.imagePath} name={skill.name} years={skill.years} />
               ))}
@@ -30,8 +30,8 @@ export default function ResumePage() {
           </div>
         </section>
 
-        <section className="mb-16">
-          <h2 className="mb-6 text-4xl font-medium">Experience</h2>
+        <section className="mb-16 md:mb-24">
+          <h2 className="mb-6 md:mb-10 text-4xl font-medium">Experience</h2>
           <div className="space-y-8">
             {experienceContent.map((experience, index) => (
               <ExperienceItem
