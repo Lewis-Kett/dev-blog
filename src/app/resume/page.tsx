@@ -16,13 +16,17 @@ export default function ResumePage() {
             TypeScript, and Node.js with a proven track record of delivering high-performance web applications and
             design systems for major brands.
           </p>
-          <Button variant="outline">Download Resume as PDF</Button>
+          <Button asChild variant="default">
+            <a href="/lewis-kett-resume.pdf" download="Lewis-Kett-Resume.pdf">
+              Download Resume as PDF
+            </a>
+          </Button>
         </div>
 
         <section className="mb-16 md:mb-24">
-          <h2 className="mb-6 md:mb-10 text-3xl font-medium md:text-4xl">Skills</h2>
+          <h2 className="mb-6 text-3xl font-medium md:mb-10 md:text-4xl">Skills</h2>
           <div className="mb-4">
-            <div className="grid gap-12 justify-center md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid justify-center gap-12 md:grid-cols-2 lg:grid-cols-4">
               {skillsContent.map((skill, index) => (
                 <SkillItem key={index} imagePath={skill.imagePath} name={skill.name} years={skill.years} />
               ))}
@@ -31,7 +35,7 @@ export default function ResumePage() {
         </section>
 
         <section className="mb-16 md:mb-24">
-          <h2 className="mb-6 md:mb-10 text-4xl font-medium">Experience</h2>
+          <h2 className="mb-6 text-4xl font-medium md:mb-10">Experience</h2>
           <div className="space-y-8">
             {experienceContent.map((experience, index) => (
               <ExperienceItem
